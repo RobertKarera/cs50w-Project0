@@ -1,0 +1,66 @@
+$color: #331900;
+$ff: serif;
+
+
+body {
+    color: $color;
+    font-family: $ff;
+    background-color: #C0C0C0;
+}
+
+div {
+    font-size: 18px;
+
+    p {
+        color: blue;
+    }
+
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    li a:hover {
+        background-color: #111;
+    }   
+}
+
+ %message {
+    font-size: 18px;
+    font-color: white;
+    width: 400px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 50px;
+    }
+
+    .email {
+        @extend %message;
+        background-color: #660000;
+    }
+
+    .phone {
+        @extend %message;
+        background-color: #990000;
+    }
+
+    .address {
+        @extend %message;
+        background-color: #CC0000;
+    }
+
+
